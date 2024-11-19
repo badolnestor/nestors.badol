@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Inspired Navbar</title>
+    <link rel="stylesheet" href=".CSS/nba.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="nba-logo.png" alt="NBA Logo">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">NBA Cup</a></li>
+                <li><a href="#">Stats</a></li>
+                <li><a href="#">Standings</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Players</a></li>
+                <li><a href="#">NBA Play</a></li>
+                <li><a href="#">Fantasy</a></li>
+                <li><a href="#">NBA Bet</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="league-pass">League Pass</button>
+                <a href="#" class="store">Store</a>
+                <a href="#" class="tickets">Tickets</a>
+                <a href="#" class="sign-in">Sign In</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="games-schedule">
+            <button class="date-button">Wed, Oct 30</button>
+            <label class="hide-scores">
+                <input type="checkbox"> Hide Scores
+            </label>
+            <div class="game-results">
+                <!-- Add game items here -->
+                <div class="game-item">
+                    <span class="team">TOR</span>
+                    <span class="score">133</span>
+                    <span class="team">CHA</span>
+                    <span class="score">138</span>
+                    <section class="carousel">
+                      <div class="carousel-container">
+                          <div class="carousel-slide active">
+                              <img src="carousel-image1.jpg" alt="Slide 1">
+                              <div class="carousel-caption">Game Highlights</div>
+                          </div>
+                          <div class="carousel-slide">
+                              <img src="carousel-image2.jpg" alt="Slide 2">
+                              <div class="carousel-caption">Player of the Week</div>
+                          </div>
+                          <div class="carousel-slide">
+                              <img src="carousel-image3.jpg" alt="Slide 3">
+                              <div class="carousel-caption">Top Plays</div>
+                          </div>
+                          <!-- Add more slides as needed -->
+                      </div>
+                      <button class="carousel-button prev">&#10094;</button>
+                      <button class="carousel-button next">&#10095;</button>
+                  </section>
+                  
+                </div>
+                <!-- More game items as needed -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(5, 75, 75);
+  color: #ecf0f1;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+.profile-img {
+  width: 70%;
+  border-radius: 50%;
+}
+.page {
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #34495e;
+  border-radius: 10px;
+}
+
+.port {
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #34495e;
+  border-radius: 10px;
+  flex-direction: inherit;
+}
+
+
+.btn-custom {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+}
+.btn-custom:hover {
+  background-color: #16a085;
+}
+.card-title{
+  color: #1abc9c;
+}
+.card-text{
+  color: black;
+}
+.card{
+width: 100%;
+
+}
+
+/*****************************
+  Progress Bar
+*****************************/
+.progress {
+  position: relative;
+  overflow: inherit;
+  height: 3px;
+  margin: 40px 0px 15px;
+  width: 100%;
+  display: inline-block;
+  
+}
+.progress .progress-bar {
+  height: 3px;
+  background: #21c87a;
+}
+.progress .progress-bar-title {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  color: #212529;
+  font-size: 14px;
+  font-weight: 600;
+  width: 0%; /* Start at 0% */
+ 
+}
+.progress .progress-bar-number {
+  position: absolute;
+  right: 0;
+  color: #646f79;
+  top: -20px;
+  width: 0%; /* Start at 0% */
+ 
+}
+
+.jobster-candidate-timeline {
+  position: relative;
+}
+.jobster-candidate-timeline:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 2px;
+  top: 5px;
+  bottom: 5px;
+  height: calc(100% - 5px);
+  background-color: #eeeeee;
+}
+
+.jobster-candidate-timeline .jobster-timeline-item {
+  display: table;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle {
+  border-radius: 50%;
+  border: 12px solid white;
+  z-index: 1;
+  top: 5px;
+  left: 9px;
+  position: absolute;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  top: -1px;
+  bottom: 5px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle > i {
+  font-size: 15px;
+  top: -8px;
+  left: -7px;
+  position: absolute;
+  color: #21c87a;
+}
+
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info {
+  display: table-cell;
+  vertical-align: top;
+  padding: 5px 0 0 70px;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info h6 {
+  color: #21c87a;
+  margin: 5px 0 0px;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info span {
+  color: aqua;
+  font-size: 13px;
+  font-weight: 500;
+}
+  
+.custom-img {
+  width: min-content; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Set a maximum height for images */
+}
+
+
+/* footer css */
+/* General footer styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Flex children (like columns or sections in the footer) */
+footer .footer-section {
+  flex: 1; /* Distribute space equally */
+  margin: 10px;
+  min-width: 200px; /* Ensure some minimum width */
+}
+
+/* Media queries for tablet view */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  footer .footer-section {
+    margin: 10px 0; /* Add spacing between sections */
+  }
+}
+
+/* Media queries for mobile view */
+@media (max-width: 375px) {
+  footer {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  footer .footer-section {
+    font-size: 14px; /* Smaller font for mobile */
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-around; /* Space out divs evenly */
+  padding: 20px;
+}
+
+
+/* Media queries for tablet view */
+@media (max-width: 108px) {
+  table {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  table .table-section {
+    margin: 10px 0; /* Add spacing between sections */
+  }
+}
+
+/* Media queries for mobile view */
+@media (max-width: 375px) {
+  table {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  table.table-section {
+    font-size: 14px; /* Smaller font for mobile */
+  }
+}
+
+    /* laptop responsive////////////////////////////////////////////////////////////////////// */
+
+    @media (min-width: 992px) {
+.col-lg-7 {
+    flex: 0 0 auto;
+    width: auto;
+    
+    
+}
+}
+/* neon animation */
+h1{
+  color: white;
+  text-shadow: 
+  0 0 10px cyan,
+  0 0 20px cyan,
+  0 0 30px cyan,
+  0 0 40px cyan,
+  0 0 50px cyan;
+}
+/* /////////////////////barcss */
+ /* Navbar */
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #000000;
+  height: 90px;
+  width: auto;
+ 
+ z-index: 1;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.auth-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.scoreboard {
+  color: #000;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.d-block w-100{
+  height: 50px;
+}
+
+
+
+/* //////////////////////////////teamcss */
+ /* Conference title */
+ .conference-title {
+  background-color: #1D428A;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+}
+
+/* Division tabs */
+.division-tabs {
+  display: flex;
+  background-color: #0F1923;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 0 0 5px 5px;
+}
+
+.division-tabs div {
+  flex: 1;
+  text-align: center;
+}
+
+/* Team grid */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Team card */
+.team-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.team-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Links section */
+.team-links {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.team-links a {
+  font-size: 12px;
+  color: #1D428A;
+  text-decoration: none;
+  margin: 2px 0;
+}
+
+.team-links a:hover {
+  text-decoration: underline;
+}
+/* /////////////////////////////////////////videocss */
+.text-light {
+  color: #ffffff;
+}
+   
+
+/* TEAMS CSS */
+/* Base styling for team grid */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.team-card {
+  width: 800px; /* Increased base width */
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px; /* Increased padding */
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.team-logo {
+  width: 100px; /* Larger logo */
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.team-name {
+  font-size: 22px; /* Larger text size */
+  font-weight: bold;
+  margin-bottom: 16px;
+  line-height: 1.2; /* Tighter line-height for better fit */
+}
+
+.team-links a {
+  display: block;
+  padding: 10px 0; /* More padding for easier tapping */
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.team-links a:hover {
+  color: #0073e6;
+}
+
+/* Desktop view adjustments (1024px and above) */
+@media (min-width: 1024px) {
+  .team-card {
+      width: 500px; /* Larger width for desktop */
+      padding: 24px;
+  }
+
+  .team-name {
+      font-size: 24px;
+  }
+
+  .team-logo {
+      width: 120px;
+  }
+
+  .team-links a {
+      font-size: 18px;
+  }
+}
+
+/* Tablet view adjustments (768px - 1023px) */
+@media (max-width: 1023px) {
+  .team-card {
+      width: 240px;
+      padding: 18px;
+  }
+
+  .team-name {
+      font-size: 20px;
+  }
+
+  .team-logo {
+      width: 90px;
+  }
+
+  .team-links a {
+      font-size: 15px;
+  }
+}
+
+/* Mobile view adjustments (480px and below) */
+@media (max-width: 375px) {
+  .team-grid {
+      flex-direction: column;
+      /* align-items: center; */
+  }
+
+  .team-card {
+      width: 95%; /* Full width with some padding */
+      max-width: 340px;
+  }
+
+  .team-logo {
+      width: 80px;
+  }
+
+  .team-name {
+      font-size: 18px;
+  }
+
+  .team-links a {
+      font-size: 14px;
+  }
+  .navbar{
+    height: inherit;
+  }
+}
+
+/* ENDS OF TEAMS CSS */
+/* /////////// DATE CSS/////////////// */
+
+/* Container styling */
+.tour-search {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.tour-search .container1 {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Form input styling */
+.tour-search-form .input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.tour-search-form .input-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.tour-search-form .input-field {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-search-form .input-field:focus {
+  border-color: #5b9bd5;
+  box-shadow: 0 0 4px rgba(91, 155, 213, 0.4);
+  outline: none;
+}
+
+/* Button styling */
+.tour-search-form .btn-secondary {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #5b9bd5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tour-search-form .btn-secondary:hover {
+  background-color: #4a8bc1;
+}
+
+
+
+
+
+
+/* ///////////END DATE CSS/////////////// */
+
+/*//////////////////// CROUSEL CSS///////////////////////////// */
+.carousel-item{
+  object-fit: contain;
+}
+/* //////////////////////////END CROUSEL CSS*/
+
+
+
